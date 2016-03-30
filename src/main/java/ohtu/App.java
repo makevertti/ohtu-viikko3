@@ -63,6 +63,17 @@ public class App {
 
         App application = ctx.getBean(App.class);
         application.run();
+
+
+
+
+
+
+
+
+
+
+
     }
     
     // testejä debugatessa saattaa olla hyödyllistä testata ohjelman ajamista

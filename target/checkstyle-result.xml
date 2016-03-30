@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="6.1.1">
 <file name="D:\ohtu\ohtu-viikko3\ohtu-viikko3\src\main\java\ohtu\App.java">
+<error line="61" column="5" severity="error" message="Metodin pituus on 17 riviÃ¤ (suurin sallittu on 10)." source="com.puppycrawl.tools.checkstyle.checks.sizes.MethodLengthCheck"/>
 </file>
 <file name="D:\ohtu\ohtu-viikko3\ohtu-viikko3\src\main\java\ohtu\data_access\InMemoryUserDao.java">
 </file>
