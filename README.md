@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/makevertti/ohtu-viikko3.svg?branch=master)](https://travis-ci.org/makevertti/ohtu-viikko3)
