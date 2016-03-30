@@ -1,9 +1,16 @@
-<testsuite tests='7' results='7' failures='0' disabled='0' errors='0' time='0.132' name='behavior.new_user_creation'>
+<testsuite tests='7' results='6' failures='1' disabled='0' errors='0' time='0.144' name='behavior.new_user_creation'>
   <testcase classname='behavior.new_user_creation' name='creation succesfull with correct username and password' time='0.003' />
   <testcase classname='behavior.new_user_creation' name='can login with succesfully generated account' time='0.002' />
-  <testcase classname='behavior.new_user_creation' name='creation fails with correct username and too short password' time='0.002' />
-  <testcase classname='behavior.new_user_creation' name='creation fails with correct username and pasword consisting of letters' time='0.002' />
+  <testcase classname='behavior.new_user_creation' name='creation fails with correct username and too short password' time='0.003' />
+  <testcase classname='behavior.new_user_creation' name='creation fails with correct username and pasword consisting of letters' time='0.001' />
   <testcase classname='behavior.new_user_creation' name='creation fails with too short username and valid pasword' time='0.002' />
-  <testcase classname='behavior.new_user_creation' name='creation fails with already taken username and valid pasword' time='0.001' />
-  <testcase classname='behavior.new_user_creation' name='can not login with account that is not succesfully created' time='0.002' />
+  <testcase classname='behavior.new_user_creation' name='creation fails with already taken username and valid pasword' time='0.012'>
+    <failure message='Step "new user is not be registered to system" -- [&gt;, username:, password:, new user registered, &gt;] doesn&apos;t contain new user not registered'>Step "new user is not be registered to system" -- [&gt;, username:, password:, new user registered, &gt;] doesn't contain new user not registered
+
+    scenario creation fails with already taken username and valid pasword
+      given command new user is selected
+      when a already taken username and valid password are entered
+      then new user is not be registered to system</failure>
+  </testcase>
+  <testcase classname='behavior.new_user_creation' name='can not login with account that is not succesfully created' time='0.001' />
 </testsuite>

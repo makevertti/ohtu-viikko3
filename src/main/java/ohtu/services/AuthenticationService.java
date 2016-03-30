@@ -37,7 +37,7 @@ public class AuthenticationService {
 
     public boolean createUser(String username, String password) {
         if (userDao.findByName(username) != null) {
-            return false;
+            return true;
         }
         if (invalid(username, password)) {
             return false;
