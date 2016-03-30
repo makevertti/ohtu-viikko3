@@ -2,6 +2,8 @@
 <checkstyle version="6.1.1">
 <file name="D:\ohtu\ohtu-viikko3\ohtu-viikko3\src\main\java\ohtu\App.java">
 </file>
+<file name="D:\ohtu\ohtu-viikko3\ohtu-viikko3\src\main\java\ohtu\data_access\FileUserDAO.java">
+</file>
 <file name="D:\ohtu\ohtu-viikko3\ohtu-viikko3\src\main\java\ohtu\data_access\InMemoryUserDao.java">
 </file>
 <file name="D:\ohtu\ohtu-viikko3\ohtu-viikko3\src\main\java\ohtu\data_access\UserDao.java">

@@ -13,9 +13,12 @@
     <context:component-scan base-package="ohtu" />
 
     <bean id="dao" class="ohtu.data_access.InMemoryUserDao"/>
+    <bean id="filedao" class="ohtu.data_access.FileUserDAO">
+        <constructor-arg type="java.lang.String" value="users"/>
+    </bean>
     <bean id="io" class="ohtu.io.ConsoleIO"/>
     <bean id="auth" class="ohtu.services.AuthenticationService">
-        <constructor-arg ref="dao"/>
+        <constructor-arg ref="filedao"/>
     </bean>
     <bean id="app" class="ohtu.App">
         <constructor-arg ref="io"/>
