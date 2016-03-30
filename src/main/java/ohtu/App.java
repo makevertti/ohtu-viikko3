@@ -73,7 +73,6 @@ public class App {
 
 
 
-
     }
     
     // testejä debugatessa saattaa olla hyödyllistä testata ohjelman ajamista
